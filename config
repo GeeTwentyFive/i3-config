@@ -7,7 +7,7 @@ set $term alacritty
 bindsym $mod+Return exec $term
 
 # kill focused window
-bindsym $mod+q kill
+bindsym $mod+p kill
 
 # start dmenu (a program launcher)
 #bindsym ctrl+space exec rofi -show run
@@ -153,7 +153,6 @@ bindsym XF86AudioLowerVolume exec "pamixer -ud 3 && pamixer --get-volume > /tmp/
 bindsym XF86AudioMute exec "amixer sset Master toggle | sed -En '/\[on\]/ s/.*\[([0-9]+)%\].*/\1/ p; /\[off\]/ s/.*/0/p' | head -1 > /tmp/xobpipe"
 
 #bindsym $mod+Shift+p exec gnome-calculator
-#bindsym $mod+p exec ~/.scripts/dmshot
 
 ## This will switch the current layout to the 'us'.
 #bindsym $mod+l exec "setxkbmap -layout us && sleep 0.1 && setxkbmap -option grp:caps_toggle 'us,ru' -option grp_led:caps && sleep 0.1 && i3lock --blur 5"
